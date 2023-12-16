@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #000;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        width: 100%;
+        height: 1000px;
+        background: url("../img/bg-top.png") no-repeat top center / cover;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+        width: 100%;
+        height: 737px;
+        background: url("../img/bg-bottom.png") no-repeat top center / cover;
+    }
+}
+
+// font
+body {
+     color: white;
+    //font-family: 'Alumni Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: normal;
+}
+
+main {
+    flex: 1
+}
+
+h1,h2,h3,h4,h5,h6,ul,ol,p {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+
+a:not([class]) {
+    text-decoration-skip-ink: auto
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    color: transparent;
+    image-rendering: auto;
+}
+
+article>*+* {
+    margin-top: 1em
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: 1220px;
+    width: 100%;
+}
+
+// lazyLoad
+.lazy-load {
+    position: relative;
+    padding: 0 0 90% 0;
+    background: url("../img/loading.gif") center / 50px no-repeat;
+
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+}

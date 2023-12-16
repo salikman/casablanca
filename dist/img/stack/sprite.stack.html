@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>SVG stack preview | svg-sprite</title>
+        <style>
+            body {
+                padding: 0;
+                margin: 0;
+                color: #666;
+                background: #fafafa;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1em;
+                line-height: 1.4;
+            }
+
+            header {
+                display: block;
+                padding: 3em 3em 2em;
+                background-color: #fff;
+            }
+
+            header p {
+                margin: 2em 0 0;
+            }
+
+            section {
+                border-top: 1px solid #eee;
+                padding: 2em 3em 0;
+            }
+
+            section ul {
+                margin: 0;
+                padding: 0;
+            }
+
+            section li {
+                display: inline-block;
+                background-color: #fff;
+                position: relative;
+                margin: 0 2em 2em 0;
+                vertical-align: top;
+                border: 1px solid #ccc;
+                padding: 1em 1em 3em;
+                cursor: default;
+            }
+
+            .icon-box {
+                margin: 0;
+                width: 144px;
+                height: 144px;
+                position: relative;
+                background: #ccc url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12'%3E%3Cpath fill='%23fff' d='M6 0h6v6H6zM0 6h6v6H0z'/%3E%3C/svg%3E") top left repeat;
+                border: 1px solid #ccc;
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+            }
+
+            .icon {
+                display: inline-block;
+            }
+
+            h1 {
+                margin-top: 0;
+            }
+
+            h2 {
+                margin: 0;
+                padding: 0;
+                font-size: 1em;
+                font-weight: 400;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                position: absolute;
+                left: 1em;
+                right: 1em;
+                bottom: 1em;
+            }
+
+            footer {
+                display: block;
+                margin: 0;
+                padding: 0 3em 3em;
+            }
+
+            footer p {
+                margin: 0;
+                font-size: .7em;
+            }
+
+            footer a {
+                color: #0f7595;
+                margin-left: 0;
+            }
+        </style>
+
+<!--
+Sprite shape dimensions
+====================================================================================================
+You will need to set the sprite shape dimensions via CSS when you use them as stack SVGs, otherwise
+they would become a huge 100% in size. You may use the following dimension classes for doing so.
+They might well be outsourced to an external stylesheet of course.
+-->
+
+<style>
+ .svg-chevron-down-dims { width: 12px; height: 12px; }
+ .svg-email-dims { width: 23px; height: 17px; }
+ .svg-fb-dims { width: 47px; height: 47px; }
+ .svg-insta-dims { width: 47px; height: 47px; }
+ .svg-location-dims { width: 22px; height: 28px; }
+ .svg-logo-dims { width: 160px; height: 15px; }
+ .svg-logo-big-dims { width: 42px; height: 50px; }
+ .svg-panthers1-dims { width: 117px; height: 48px; }
+ .svg-panthers2-dims { width: 161px; height: 33px; }
+ .svg-panthers3-dims { width: 102px; height: 48px; }
+ .svg-panthers4-dims { width: 130px; height: 35px; }
+ .svg-phone-dims { width: 16px; height: 16px; }
+ .svg-phone-circle-dims { width: 23px; height: 23px; }
+ .svg-skybar-dims { width: 244px; height: 22px; }
+ .svg-work-dims { width: 23px; height: 23px; }
+</style>
+
+<!--
+====================================================================================================
+-->
+
+    </head>
+    <body>
+        <header>
+            <h1>SVG stack preview</h1>
+            <p>This preview features an SVG stack. Please have a look at the HTML source for further details and be aware of the following constraints:</p>
+            <ul>
+                <li>Your browser has to <a href="https://caniuse.com/svg-fragment" target="_blank" rel="noopener noreferrer">support SVG fragment identifiers</a> for SVG stacks to work.</li>
+                <li>Support for SVG fragment identifiers hasn't always been that decent. For older browsers you will have to use some prolyfill like <a href="https://github.com/preciousforever/SVG-Stacker/blob/master/fixsvgstack.jquery.js" target="_blank" rel="noopener noreferrer">fixsvgstack.jquery.js</a>.</li>
+            </ul>
+        </header>
+        <section>
+
+<!--
+SVG stack
+====================================================================================================
+These SVG images make use of fragment identifiers (IDs) to reference certain portions of the
+external sprite. By default, all shapes inside the sprite are hidden by CSS. The `:target` pseudo
+selector is used to show the very shape that is referenced by the fragment identifier.
+-->
+
+            <ul>
+
+             <li title="chevron-down">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#chevron-down" class="svg-chevron-down-dims" alt="chevron-down">
+                    </div>
+                    <h2>chevron-down, </h2>
+                </li>
+             <li title="email">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#email" class="svg-email-dims" alt="email">
+                    </div>
+                    <h2>email, </h2>
+                </li>
+             <li title="fb">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#fb" class="svg-fb-dims" alt="fb">
+                    </div>
+                    <h2>fb, </h2>
+                </li>
+             <li title="insta">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#insta" class="svg-insta-dims" alt="insta">
+                    </div>
+                    <h2>insta, </h2>
+                </li>
+             <li title="location">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#location" class="svg-location-dims" alt="location">
+                    </div>
+                    <h2>location, </h2>
+                </li>
+             <li title="logo">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#logo" class="svg-logo-dims" alt="logo">
+                    </div>
+                    <h2>logo, </h2>
+                </li>
+             <li title="logo-big">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#logo-big" class="svg-logo-big-dims" alt="logo-big">
+                    </div>
+                    <h2>logo-big, </h2>
+                </li>
+             <li title="panthers1">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#panthers1" class="svg-panthers1-dims" alt="panthers1">
+                    </div>
+                    <h2>panthers1, </h2>
+                </li>
+             <li title="panthers2">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#panthers2" class="svg-panthers2-dims" alt="panthers2">
+                    </div>
+                    <h2>panthers2, </h2>
+                </li>
+             <li title="panthers3">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#panthers3" class="svg-panthers3-dims" alt="panthers3">
+                    </div>
+                    <h2>panthers3, </h2>
+                </li>
+             <li title="panthers4">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#panthers4" class="svg-panthers4-dims" alt="panthers4">
+                    </div>
+                    <h2>panthers4, </h2>
+                </li>
+             <li title="phone">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#phone" class="svg-phone-dims" alt="phone">
+                    </div>
+                    <h2>phone, </h2>
+                </li>
+             <li title="phone-circle">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#phone-circle" class="svg-phone-circle-dims" alt="phone-circle">
+                    </div>
+                    <h2>phone-circle, </h2>
+                </li>
+             <li title="skybar">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#skybar" class="svg-skybar-dims" alt="skybar">
+                    </div>
+                    <h2>skybar, </h2>
+                </li>
+             <li title="work">
+                    <div class="icon-box">
+                        <img src="../icons/icons.svg#work" class="svg-work-dims" alt="work">
+                    </div>
+                    <h2>work, </h2>
+                </li>
+         </ul>
+
+<!--
+====================================================================================================
+-->
+
+        </section>
+        <footer>
+            <p>Generated at Sat, 16 Dec 2023 15:00:47 GMT by <a href="https://github.com/svg-sprite/svg-sprite" target="_blank" rel="noopener noreferrer">svg-sprite</a>.</p>
+        </footer>
+    </body>
+</html>

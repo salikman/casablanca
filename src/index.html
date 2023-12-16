@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/base/head.html', {
+    "title": "Главная"
+})
+
+<body>
+    @@include('html/base/header.html', {})
+
+    <main>
+        @@include('html/sections/intro.html')
+        @@include('html/sections/info.html')
+        @@include('html/sections/panthers.html')
+        @@include('html/sections/feedback.html')
+    </main>
+
+    @@include('html/base/footer.html', {})
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>
