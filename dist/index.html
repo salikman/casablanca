@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20231216170048">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css?_v=20231217193434" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20231217193434" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css?_v=20231217193434">
     <title>Главная</title>
 </head>
 
@@ -27,7 +29,7 @@
             </div>
             <div class="header__phone">
                 <p>For reservations, call:</p>
-                <a href="#">
+                <a href="#modal-phone" data-fancybox>
                     <svg><use href="img/icons/icons.svg#phone"></use></svg>
                     <span>+420 792 999 292</span>
                 </a>
@@ -52,27 +54,27 @@
         <section class="info">
     <div class="container">
         <div class="info__wrapper">
-            <div class="info__img">
+            <div class="info__img" data-aos="zoom-in" data-aos-offset="300">
                 <picture><source srcset="img/img-info.webp" type="image/webp"><img src="img/img-info.png" alt=""></picture>
             </div>
             <div class="info__content">
-                <h2 class="info__title">
+                <h2 class="info__title" data-aos="fade-left" data-aos-duration="500">
                     Classy New Year’s EVE<br>
                     <span>CASABLANCA Sky Bar</span>
                 </h2>
-                <div class="info__text">
+                <div class="info__text" data-aos="fade-left" data-aos-duration="700">
                     <p><strong>31.12. 2023 od 21:00 / 23:00</strong><br>
                         Buďte ve středu pozornosti ve stylovém baru Casablanca Sky Bar na střeše hotelu The President, kde se konají ty nejexkluzivnější oslavy. Přijďte k nám oslavit nezapomenutelnou noc vysoko pod širým nebem s prémiovou večeří formou rautu, speciálními vystoupeními,soukromým ohňostrojem, DJs a dalšími třpytivými překvapeními.
                     </p>
                 </div>
                 <ul class="info__list">
-                    <li class="address">
+                    <li class="address" data-aos="fade-left" data-aos-duration="900">
                         <p><strong>For reservations:</strong></p>
                         <p>nám. Curieových 1, 110 00 Staré Město<br>
                             President Hotel Prague</p>
                     </li>
-                    <li class="phone">+420 792 999 292</li>
-                    <li class="email">skybar@casablancaprague.cz</li>
+                    <li class="phone" data-aos="fade-left" data-aos-duration="1100">+420 792 999 292</li>
+                    <li class="email" data-aos="fade-left" data-aos-duration="1300">skybar@casablancaprague.cz</li>
                 </ul>
             </div>
         </div>
@@ -80,7 +82,7 @@
 </section>
         <section class="panthers">
     <div class="container">
-        <div class="panthers__list">
+        <div class="panthers__list" data-aos="flip-left" data-aos-duration="500">
             <svg><use href="img/icons/icons.svg#panthers2"></use></svg>
             <svg><use href="img/icons/icons.svg#panthers1"></use></svg>
             <svg><use href="img/icons/icons.svg#panthers4"></use></svg>
@@ -89,7 +91,8 @@
         </div>
     </div>
 </section>
-        <section class="feedback">
+        <section class="feedback" data-aos="fade-up"
+         data-aos-anchor-placement="top-bottom">
     <div class="container">
         <div class="feedback__wrapper">
             <div class="feedback__map">
@@ -129,9 +132,28 @@
     </div>
 </footer>
 
-    <!-- swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20231216170048"/>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20231216170048"></script>
-    <script src="js/app.min.js?_v=20231216170048"></script>
+    <div id="modal-phone" style="display: none">
+    <div class="modal-content">
+        <h2 class="title">Casablanca Sky Bar</h2>
+        <ul class="list">
+            <li class="address">nám. Curieových 1, 110 00 Staré Město<br>
+                President Hotel Prague</li>
+            <li class="working">
+                <p><strong>Opening hours:</strong><br>
+                    Sunday – Thursday: 18:00 – 00:00<br>
+                    Friday – Saturday: 18:00 – 02:00
+                </p>
+            </li>
+            <li class="email">skybar@casablancaprague.cz</li>
+            <li class="phone">+420 792 999 292</li>
+            <li>IČO: CZ19467702</li>
+        </ul>
+    </div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js?_v=20231217193434" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js?_v=20231217193434"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js?_v=20231217193434" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/app.min.js?_v=20231217193434"></script>
 </body>
 </html>

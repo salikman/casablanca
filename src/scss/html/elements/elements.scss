@@ -1,0 +1,116 @@
+#modal-phone {
+  background: transparent;
+
+  @media (max-width: 991px) {
+    padding: 40px 20px;
+  }
+}
+.modal-content {
+  padding: 60px 80px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: linear-gradient(180deg, rgba(4, 20, 39, 0.20) 0%, rgba(4, 20, 39, 0.00) 100%);
+  backdrop-filter: blur(7.5px);
+
+  @media (max-width: 991px) {
+    padding: 30px 40px;
+  }
+
+  .title {
+    margin-bottom: 20px;
+    color: #FFF;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px; /* 75% */
+
+    @media (max-width: 991px) {
+      font-size: 24px;
+    }
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+
+    li {
+      @media (max-width: 991px) {
+        padding-left: 30px;
+      }
+      &.working {
+        position: relative;
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -33px;
+          width: 23px;
+          height: 23px;
+          background: url("../img/icons/icons.svg#work") no-repeat center / cover;
+
+          @media (max-width: 991px) {
+            left: 0;
+          }
+        }
+      }
+      &.address {
+        position: relative;
+        margin-bottom: 30px;
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -33px;
+          width: 22px;
+          height: 28px;
+          background: url("../img/icons/icons.svg#location") no-repeat center / cover;
+
+          @media (max-width: 991px) {
+            left: 0;
+          }
+        }
+      }
+      &.phone {
+        position: relative;
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -33px;
+          width: 23px;
+          height: 23px;
+          background: url("../img/icons/icons.svg#phone-circle") no-repeat center / cover;
+
+          @media (max-width: 991px) {
+            left: 0;
+          }
+        }
+      }
+      &.email {
+        position: relative;
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -33px;
+          width: 23px;
+          height: 16px;
+          background: url("../img/icons/icons.svg#email") no-repeat center / cover;
+
+          @media (max-width: 991px) {
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+}

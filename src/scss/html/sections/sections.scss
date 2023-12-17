@@ -44,6 +44,7 @@
     @media (max-width: 991px) {
       flex-direction: column;
       align-items: center;
+      padding: 0;
     }
   }
 
@@ -165,6 +166,10 @@
       grid-template-columns: repeat(3, 1fr);
       justify-content: center;
       gap: 50px;
+      padding: 0;
+    }
+    @media (max-width: 767px) {
+      grid-template-columns: repeat(2, 1fr);
     }
 
     svg, img {
@@ -174,6 +179,7 @@
       @media (max-width: 767px) {
         max-width: 100%;
         height: 50px;
+        object-fit: contain;
       }
     }
   }
@@ -205,6 +211,10 @@
     border: 1px solid rgba(255, 255, 255, 0.15);
     background: linear-gradient(180deg, rgba(4, 20, 39, 0.20) 0%, rgba(4, 20, 39, 0.00) 100%);
     backdrop-filter: blur(7.5px);
+
+    @media (max-width: 991px) {
+      padding: 30px 20px;
+    }
   }
 
   &__title {
@@ -214,6 +224,10 @@
     font-style: normal;
     font-weight: 700;
     line-height: 21px; /* 75% */
+
+    @media (max-width: 991px) {
+      font-size: 24px;
+    }
   }
 
   &__list {
@@ -227,6 +241,10 @@
     line-height: 21px;
 
     li {
+      @media (max-width: 991px) {
+        padding-left: 30px;
+      }
+
       &.working {
         position: relative;
 
@@ -238,6 +256,10 @@
           width: 23px;
           height: 23px;
           background: url("../img/icons/icons.svg#work") no-repeat center / cover;
+
+          @media (max-width: 991px) {
+            left: 0;
+          }
         }
       }
       &.address {
@@ -252,6 +274,10 @@
           width: 22px;
           height: 28px;
           background: url("../img/icons/icons.svg#location") no-repeat center / cover;
+
+          @media (max-width: 991px) {
+            left: 0;
+          }
         }
       }
       &.phone {
@@ -265,6 +291,10 @@
           width: 23px;
           height: 23px;
           background: url("../img/icons/icons.svg#phone-circle") no-repeat center / cover;
+
+          @media (max-width: 991px) {
+            left: 0;
+          }
         }
       }
       &.email {
@@ -278,6 +308,10 @@
           width: 23px;
           height: 16px;
           background: url("../img/icons/icons.svg#email") no-repeat center / cover;
+
+          @media (max-width: 991px) {
+            left: 0;
+          }
         }
       }
     }
