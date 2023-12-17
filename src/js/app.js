@@ -4,4 +4,6 @@ import * as lazyLoad from "./modules/lazyload.js";
 flsFunctions.isWebp();
 lazyLoad.lazyLoad();
 
-AOS.init();
+AOS.init({
+    once: true
+});
