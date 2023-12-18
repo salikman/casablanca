@@ -1786,6 +1786,51 @@ select {
   grid-area: c;
 }
 
+.form {
+  padding: 50px 0;
+}
+
+.form__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+  padding: 50px;
+  background: #0C0C0C;
+  -webkit-box-shadow: 22px 30px 95px 1px rgba(0, 0, 0, 0.7);
+          box-shadow: 22px 30px 95px 1px rgba(0, 0, 0, 0.7);
+}
+
+.form__heading {
+  max-width: 735px;
+  width: 100%;
+  margin: auto;
+}
+
+.form__heading h2 {
+  margin-bottom: 10px;
+  color: #FFF;
+  text-align: center;
+  font-family: Alumni Sans;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.form__heading p {
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
 @media (min-width: 992px) {
   .carte__list .item:nth-child(even) {
     margin-top: 80px;
