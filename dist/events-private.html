@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cz">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css?_v=20231221180826" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20231221180826" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css?_v=20231221180826">
-    <title>Главная</title>
+    <title>All Events</title>
 </head>
 
 <body>
-    <header class="header">
+<header class="header">
     <div class="container">
         <div class="header__wrapper">
             <a href="/" class="header__logo"><img src="img/icons/icons.svg#logo" alt="Casablanca"></a>
@@ -38,8 +38,8 @@
     </div>
 </header>
 
-    <main>
-        <section class="intro">
+<main>
+    <section class="intro">
     <div class="container">
         <div class="intro__wrapper">
             <div class="intro__logo">
@@ -51,36 +51,33 @@
         </div>
     </div>
 </section>
-        <section class="info">
+    <div class="title-container">
+    <h1>PRIVATE <span>EVENTS</span></h1>
+</div>
+    <section class="events-private">
     <div class="container">
-        <div class="info__wrapper">
-            <div class="info__img" data-aos="zoom-in" data-aos-offset="300">
-                <picture><source srcset="img/img-info.webp" type="image/webp"><img src="img/img-info.png" alt=""></picture>
-            </div>
-            <div class="info__content">
-                <h2 class="info__title" data-aos="fade-left" data-aos-duration="500">
-                    Classy New Year’s EVE<br>
-                    <span>CASABLANCA Sky Bar</span>
-                </h2>
-                <div class="info__text" data-aos="fade-left" data-aos-duration="700">
-                    <p><strong>31.12. 2023 od 21:00 / 23:00</strong><br>
-                        Buďte ve středu pozornosti ve stylovém baru Casablanca Sky Bar na střeše hotelu The President, kde se konají ty nejexkluzivnější oslavy. Přijďte k nám oslavit nezapomenutelnou noc vysoko pod širým nebem s prémiovou večeří formou rautu, speciálními vystoupeními,soukromým ohňostrojem, DJs a dalšími třpytivými překvapeními.
-                    </p>
+        <div class="events-private__wrapper">
+            <div class="events-private__content">
+                <h2 class="events-private__title">BOOK AN <span>EVENT</span></h2>
+                <div class="events-private__text">
+                    <p>If you have any questions or would like to make arrangements for parties with 15 or more guests, our team will be happy to assist you. Please expect a prompt response with the necessary details.</p>
+                    <p>For parties comprising 7 to 14 guests, kindly contact us via email at <a href="mailto:skybar@casablancaprague.cz.">skybar@casablancaprague.cz.</a></p>
+                    <p>Our dedicated staff will assist you in ensuring your event is planned to perfection.</p>
                 </div>
-                <ul class="info__list">
-                    <li class="address" data-aos="fade-left" data-aos-duration="900">
-                        <p><strong>For reservations:</strong></p>
-                        <p>nám. Curieových 1, 110 00 Staré Město<br>
-                            President Hotel Prague</p>
-                    </li>
-                    <li class="phone" data-aos="fade-left" data-aos-duration="1100">+420 792 999 292</li>
-                    <li class="email" data-aos="fade-left" data-aos-duration="1300">skybar@casablancaprague.cz</li>
-                </ul>
+                <div class="events-private__links">
+                    <a href="#">EVENT GUIDE <span>(PDF)</span></a>
+                    <a href="#">BOOK ONLINE</a>
+                </div>
             </div>
+            <a href="#" class="events-private__tour">
+                <img src="img/icons/icons.svg#logo" alt="">
+                <svg><use href="img/icons/icons.svg#play"></use></svg>
+                <span>START 3D TOUR</span>
+            </a>
         </div>
     </div>
 </section>
-        <section class="panthers">
+    <section class="panthers">
     <div class="container">
         <div class="panthers__list" data-aos="flip-left" data-aos-duration="500">
             <svg><use href="img/icons/icons.svg#panthers2"></use></svg>
@@ -91,7 +88,7 @@
         </div>
     </div>
 </section>
-        <section class="feedback" data-aos="fade-up"
+    <section class="feedback" data-aos="fade-up"
          data-aos-anchor-placement="top-bottom">
     <div class="container">
         <div class="feedback__wrapper">
@@ -117,9 +114,9 @@
         </div>
     </div>
 </section>
-    </main>
+</main>
 
-    <footer class="footer">
+<footer class="footer">
     <div class="container">
         <div class="footer__wrapper">
             <a href="/" class="footer__logo"><img src="img/icons/icons.svg#logo" alt="Casablanka"></a>
@@ -132,7 +129,7 @@
     </div>
 </footer>
 
-    <div id="modal-phone" style="display: none">
+<div id="modal-phone" style="display: none">
     <div class="modal-content">
         <h2 class="title">Casablanca Sky Bar</h2>
         <ul class="list">
@@ -151,9 +148,9 @@
     </div>
 </div>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js?_v=20231221180826" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js?_v=20231221180826"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js?_v=20231221180826" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="js/app.min.js?_v=20231221180826"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js?_v=20231221180826" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js?_v=20231221180826"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js?_v=20231221180826" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/app.min.js?_v=20231221180826"></script>
 </body>
 </html>

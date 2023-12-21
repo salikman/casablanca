@@ -494,7 +494,7 @@ select {
   margin-right: auto;
   padding-left: 1em;
   padding-right: 1em;
-  max-width: 1220px;
+  max-width: 1070px;
   width: 100%;
 }
 
@@ -909,6 +909,26 @@ select {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 50px 0;
+}
+
+.title-container {
+  margin-bottom: 180px;
+}
+
+.title-container h1 {
+  text-align: center;
+  color: #FFF;
+  font-family: Alumni Sans;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 80px;
+  /* 80% */
+}
+
+.title-container h1 span {
+  color: #DA3743;
+  font-weight: 400;
 }
 
 .intro {
@@ -1831,6 +1851,516 @@ select {
   line-height: 1.5;
 }
 
+.event {
+  padding: 50px 0;
+}
+
+.event__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.event__title {
+  margin-bottom: 30px;
+  color: #FFF;
+  font-family: Alumni Sans;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.event__title span {
+  color: #DA3743;
+}
+
+.event__row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.event__img {
+  position: relative;
+  padding-bottom: 65%;
+}
+
+.event__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.event__content span {
+  color: #DA3743;
+  font-family: Alumni Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.event__content p {
+  margin-bottom: 20px;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.event__meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 22px;
+  margin-top: 10px;
+}
+
+.event__meta .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 6px;
+}
+
+.event__meta .date svg {
+  width: 11px;
+  height: 11px;
+}
+
+.event__meta .date p {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.event__meta .views {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.event__meta .views svg {
+  width: 14px;
+  height: 11px;
+}
+
+.event__meta .views p {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.event__meta .views p span {
+  color: #DA3743;
+}
+
+.event-photos {
+  padding: 50px 0;
+}
+
+.event-photos__title {
+  margin-bottom: 25px;
+  color: #FFF;
+  font-family: Alumni Sans;
+  font-size: 66px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.event-photos__title span {
+  color: #DA3743;
+  font-weight: 400;
+}
+
+.event-photos__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.event-photos__list a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.event-photos__list a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.events-last {
+  padding: 20px 0 0;
+}
+
+.events-last__title {
+  margin-bottom: 25px;
+  color: #FFF;
+  font-family: Alumni Sans;
+  font-size: 66px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.events-last__title span {
+  color: #DA3743;
+  font-weight: 400;
+}
+
+.events-last__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.events-last__list .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+
+.events-last__list .item__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.events-last__list .item__header .title {
+  color: #DA3743;
+  font-family: Alumni Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  /* 100% */
+}
+
+.events-last__list .item__header .date {
+  color: #FFF;
+  font-family: Alumni Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.events-last__list .item__img {
+  width: 100%;
+  height: 140px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.events-last__list .item__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.events-last__list .item__desc {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.events-all {
+  padding: 150px 0 50px;
+}
+
+.events-all__title {
+  margin-bottom: 50px;
+  color: #FFF;
+  font-family: Alumni Sans;
+  font-size: 66px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.events-all__title span {
+  color: #DA3743;
+  font-weight: 400;
+}
+
+.events-all__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.events-all__list .item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 340px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.events-all__list .item__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 5px;
+  padding: 15px 20px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.events-all__list .item__date span,
+.events-all__list .item__date i {
+  color: #FFF;
+  text-align: center;
+  font-family: Alumni Sans;
+  font-size: 30px;
+  font-style: normal;
+  line-height: 30px;
+  /* 100% */
+  text-transform: uppercase;
+}
+
+.events-all__list .item__date span {
+  font-weight: 700;
+}
+
+.events-all__list .item__date i {
+  font-weight: 400;
+}
+
+.events-all__list .item__title {
+  margin-top: auto;
+  padding: 20px 10px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #FFF;
+  text-align: center;
+  font-family: Alumni Sans;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  /* 100% */
+  text-transform: uppercase;
+}
+
+.events-private {
+  padding: 50px 0;
+}
+
+.events-private__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.events-private__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.events-private__title {
+  margin-bottom: 25px;
+  color: #FFF;
+  font-family: Alumni Sans;
+  font-size: 66px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.events-private__title span {
+  color: #DA3743;
+  font-weight: 400;
+}
+
+.events-private__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.events-private__text p {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.events-private__text p a {
+  color: #DA3743;
+  text-decoration: underline;
+}
+
+.events-private__links {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: auto;
+}
+
+.events-private__links a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+  color: #FFF;
+  font-family: Alumni Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  /* 116.667% */
+  text-transform: uppercase;
+}
+
+.events-private__links a:first-child {
+  background: #DA3743;
+  border: 1px solid #DA3743;
+}
+
+.events-private__links a:last-child {
+  background: transparent;
+  border: 1px solid #DA3743;
+}
+
+.no-webp .events-private__tour{
+  background: url("../img/img-video.png") no-repeat center/cover; }
+
+.events-private__tour {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+  height: 370px;
+}
+
+.events-private__tour img {
+  width: 270px;
+  height: 23px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.events-private__tour svg {
+  width: 90px;
+  height: 90px;
+}
+
+.events-private__tour span {
+  color: #FFF;
+  text-align: center;
+  font-family: Alumni Sans;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+}
+
 @media (min-width: 992px) {
   .carte__list .item:nth-child(even) {
     margin-top: 80px;
@@ -1902,6 +2432,14 @@ select {
 
   .modal-content .list li.email:before {
     left: 0;
+  }
+
+  .title-container {
+    margin-bottom: 100px;
+  }
+
+  .title-container h1 {
+    font-size: 80px;
   }
 
   .info__wrapper {
@@ -2036,6 +2574,35 @@ select {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
+
+  .event__title {
+    margin-bottom: 20px;
+    font-size: 36px;
+    line-height: 30px;
+  }
+
+  .event-photos__list {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .events-last__title {
+    font-size: 50px;
+  }
+
+  .events-all__list {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .events-private__wrapper {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .events-private__links {
+    margin-top: 30px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2115,6 +2682,36 @@ select {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .event__row {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .events-last__list {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .events-private__title {
+    text-align: center;
+    font-size: 56px;
+  }
+}
+
+@media (max-width: 580px) {
+  .events-all__list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .events-last__list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -2154,6 +2751,35 @@ select {
     width: 50px;
     height: 50px;
   }
+
+  .event-photos__list {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .events-private__tour {
+    height: 250px;
+  }
+
+  .events-private__tour img {
+    width: 250px;
+  }
+
+  .events-private__tour svg {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 375px) {
+  .title-container h1 {
+    line-height: 45px;
+  }
+
+  .events-private__links {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
 }
 
 .webp body:before{ background: url(../img/bg-top.webp) no-repeat top center/cover; }
@@ -2165,3 +2791,5 @@ select {
 .webp .info__wrapper:before{ background: url(../img/info-before.webp) no-repeat center/contain; }
 
 .webp .video__tour{ background: url(../img/img-video.webp) no-repeat center/cover; }
+
+.webp .events-private__tour{ background: url(../img/img-video.webp) no-repeat center/cover; }
