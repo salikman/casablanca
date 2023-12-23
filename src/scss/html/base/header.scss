@@ -2,10 +2,11 @@
   &__wrapper {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 50px 0;
 
-    @media (max-width: 991px) {
-      padding: 30px 0;
+    @media (max-width: 767px) {
+      padding: 20px 0;
     }
   }
 
@@ -21,11 +22,28 @@
       height: 100%;
       object-fit: cover;
     }
+
+    svg {
+      display: none;
+      width: 45px;
+      height: 63px;
+    }
+    
+    @media (max-width: 767px) {
+      width: 63px;
+      height: 63px;
+
+      //img {
+      //  display: none;
+      //}
+      //svg {
+      //  display: block;
+      //}
+    }
   }
 
   &__lang {
     position: relative;
-    margin-left: auto;
 
     &:hover, &:focus {
       .lang__dropdown {
@@ -33,6 +51,10 @@
         visibility: visible;
         transform: translateY(0);
       }
+    }
+
+    @media (max-width: 767px) {
+      margin-left: auto;
     }
 
     .lang__current {
@@ -44,19 +66,11 @@
       border: 1px solid rgba(white, .2);
       cursor: pointer;
 
-      @media (max-width: 991px) {
-        border: none;
-      }
-
       .arrow {
         display: flex;
         align-items: center;
         width: 12px;
         height: 12px;
-
-        @media (max-width: 991px) {
-          display: none;
-        }
 
         svg {
           width: 100%;
@@ -70,11 +84,6 @@
       width: 16px;
       height: 16px;
       border-radius: 50%;
-
-      @media (max-width: 991px) {
-        width: 25px;
-        height: 25px;
-      }
 
       &.cz {
         background: url("../img/cz.png") no-repeat center / cover;
@@ -107,11 +116,9 @@
   }
 
   &__phone {
-    margin-left: 50px;
-
     @media (max-width: 991px) {
       margin-left: 20px;
-
+      
       p {
         display: none;
       }
@@ -148,6 +155,136 @@
       span {
         font-size: 20px;
         font-weight: 600;
+      }
+    }
+  }
+
+  &__collapse {
+    position: relative;
+    display: none;
+    
+    @media (max-width: 767px) {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 6px;
+      margin-left: 20px;
+      cursor: pointer;
+      width: 36px;
+      height: 36px;
+      transition: all .3s ease;
+
+      span {
+        height: 2px;
+        background: white;
+        border-radius: 10px;
+        transition: all .3s ease;
+
+        &:nth-child(odd) {
+          width: 30px;
+        }
+        &:nth-child(even) {
+          width: 26px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    &.open {
+      .header__nav {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+      .header__collapse {
+        align-items: center;
+        z-index: 100;
+
+        span {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+
+          &:nth-child(1) {
+            transform: rotate(-45deg);
+          }
+          &:nth-child(3) {
+            transform: rotate(45deg);
+          }
+          &:nth-child(2),&:nth-child(4) {
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &__nav {
+    @media (max-width: 991px) {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+    @media (max-width: 767px) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 99;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100vh;
+      background: rgba(#20202C, 0.8);
+      transition: all .3s ease;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-30px);
+    }
+  }
+
+  &__menu {
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      li {
+        a {
+          color: #FFF;
+          font-family: Montserrat;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+
+          &:hover {
+            color: #DA3743;
+          }
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      li {
+        a {
+          color: #FFF;
+          font-family: Montserrat;
+          font-size: 30px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+
+          &:hover {
+            color: #DA3743;
+          }
+        }
       }
     }
   }

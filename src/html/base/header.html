@@ -1,7 +1,23 @@
 <header class="header">
     <div class="container">
         <div class="header__wrapper">
-            <a href="/" class="header__logo"><img src="@img/icons/icons.svg#logo" alt="Casablanca"></a>
+            <a href="/" class="header__logo">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="@img/icons/icons.svg#logo">
+                    <img src="@img/icons/icons.svg#logo-mobile" alt="">
+                </picture>
+            </a>
+
+            <div class="header__nav">
+                <ul class="header__menu">
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Reservation</a></li>
+                    <li><a href="#">Private Events</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+
             <div class="header__lang">
                 <div class="lang__current">
                     <div class="flag cz"></div>
@@ -20,6 +36,9 @@
                     <svg><use href="@img/icons/icons.svg#phone"></use></svg>
                     <span>+420 792 999 292</span>
                 </a>
+            </div>
+            <div class="header__collapse">
+                <span></span><span></span><span></span><span></span>
             </div>
         </div>
     </div>
