@@ -749,7 +749,8 @@ select {
   height: 17px;
 }
 
-#modal-phone {
+#modal-phone,
+#modal-tour {
   background: transparent;
 }
 
@@ -1460,6 +1461,21 @@ select {
 }
 
 .carte__list .item {
+  position: relative;
+  height: 580px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.carte__list .item:hover .item__wrapper,
+.carte__list .item:focus .item__wrapper {
+  top: -5px;
+  -webkit-filter: brightness(150%);
+          filter: brightness(150%);
+}
+
+.carte__list .item__wrapper {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1470,15 +1486,18 @@ select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 580px;
+  width: 100%;
+  height: 100%;
   padding: 50px 20px;
+  border-radius: 10px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  border-radius: 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.carte__list .item p {
+.carte__list .item i {
   margin-top: auto;
   color: #FFF;
   text-align: center;
@@ -2027,6 +2046,7 @@ select {
 }
 
 .event-photos__list a {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2036,6 +2056,20 @@ select {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.event-photos__list a:first-child:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 10;
+  width: 70px;
+  height: 50px;
+  background: url("../img/icons/icons.svg#1") no-repeat center/cover;
 }
 
 .event-photos__list a img {
@@ -2117,6 +2151,11 @@ select {
   height: 140px;
   border-radius: 5px;
   overflow: hidden;
+}
+
+.events-last__list .item__img:hover,
+.events-last__list .item__img:focus {
+  opacity: 0.8;
 }
 
 .events-last__list .item__img img {
@@ -2533,6 +2572,14 @@ select {
   height: 300px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(19.97%, rgba(0, 0, 0, 0.5)), color-stop(50.41%, rgba(0, 0, 0, 0)));
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 19.97%, rgba(0, 0, 0, 0) 50.41%);
+  overflow: hidden;
+}
+
+.menu-card .tabs .tabs__content .menu__img .item:hover .item__img,
+.menu-card .tabs .tabs__content .menu__img .item:focus .item__img {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .menu-card .tabs .tabs__content .menu__img .item__img {
@@ -2542,6 +2589,8 @@ select {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .menu-card .tabs .tabs__content .menu__img .item__header {
@@ -2623,7 +2672,8 @@ select {
             justify-content: center;
   }
 
-  #modal-phone {
+  #modal-phone,
+  #modal-tour {
     padding: 40px 20px;
   }
 
@@ -2740,15 +2790,23 @@ select {
 
   .carte__list .item {
     height: 300px;
+  }
+
+  .carte__list .item__wrapper {
     padding: 30px 10px;
   }
 
-  .carte__list .item p {
+  .carte__list .item i {
     font-size: 36px;
   }
 
   .carte__list .item span {
     font-size: 36px;
+  }
+
+  .history {
+    padding-top: 0;
+    margin-top: -50px;
   }
 
   .history__wrapper {
@@ -3001,7 +3059,6 @@ select {
 
   .menu-card .tabs .tabs__content .menu__img .item {
     border-radius: 10px;
-    overflow: hidden;
   }
 
   .menu-card .tabs .tabs__content .menu__img .item__header {
@@ -3190,6 +3247,10 @@ select {
 
   .feedback__map {
     height: 300px;
+  }
+
+  .about {
+    padding-bottom: 0;
   }
 
   .about__wrapper {

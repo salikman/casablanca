@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css?_v=20231223133721" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20231223133721" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.min.css?_v=20231223133721">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css?_v=20231225140911" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20231225140911" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css?_v=20231225140911">
     <title>Главная</title>
 </head>
 
@@ -106,21 +106,18 @@
     <div class="container">
         <div class="gallery__wrapper">
             <div class="tabs">
-
-                <ul class="tabs__caption">
+                <ul class="tabs__caption" data-aos="fade-up" data-aos-delay="300">
                     <li class="active">Instagram PHOTO</li>
                     <li>FACEBOOK PHOTO</li>
                 </ul>
-
-                <div class="tabs__content active">
+                <div class="tabs__content active" data-aos="fade-up" data-aos-delay="800">
                     <a href="img/img-grid-2.png" data-fancybox="Instagram"><picture><source srcset="img/img-grid-2.webp" type="image/webp"><img src="img/img-grid-2.png" alt=""></picture></a>
                     <a href="img/img-grid-2.png" data-fancybox="Instagram"><picture><source srcset="img/img-grid-2.webp" type="image/webp"><img src="img/img-grid-2.png" alt=""></picture></a>
                     <a href="img/img-grid-2.png" data-fancybox="Instagram"><picture><source srcset="img/img-grid-2.webp" type="image/webp"><img src="img/img-grid-2.png" alt=""></picture></a>
                     <a href="img/img-grid-2.png" data-fancybox="Instagram"><picture><source srcset="img/img-grid-2.webp" type="image/webp"><img src="img/img-grid-2.png" alt=""></picture></a>
                     <a href="img/img-grid-2.png" data-fancybox="Instagram"><picture><source srcset="img/img-grid-2.webp" type="image/webp"><img src="img/img-grid-2.png" alt=""></picture></a>
                 </div>
-
-                <div class="tabs__content">
+                <div class="tabs__content" data-aos="fade-up" data-aos-delay="700">
                     <a href="img/img-grid-1.png" data-fancybox="Instagram"><picture><source srcset="img/img-grid-1.webp" type="image/webp"><img src="img/img-grid-1.png" alt=""></picture></a>
                     <a href="img/img-grid-1.png" data-fancybox="Instagram"><picture><source srcset="img/img-grid-1.webp" type="image/webp"><img src="img/img-grid-1.png" alt=""></picture></a>
                     <a href="img/img-grid-1.png" data-fancybox="Instagram"><picture><source srcset="img/img-grid-1.webp" type="image/webp"><img src="img/img-grid-1.png" alt=""></picture></a>
@@ -135,23 +132,31 @@
     <div class="carte">
     <div class="container">
         <div class="carte__wrapper">
-            <div class="carte__title">CASABLANCA <span>MENU</span></div>
+            <div class="carte__title" data-aos="zoom-out-right" data-aos-delay="500">CASABLANCA <span>MENU</span></div>
             <div class="carte__list">
-                <a href="#" class="item" style="background-image: url('img/menu-1.png');">
-                    <p>Dining</p>
-                    <span>menu</span>
+                <a href="#" class="item" data-aos="fade-up" data-aos-delay="600">
+                    <span class="item__wrapper" style="background-image: url('img/menu-1.png');">
+                        <i>Dining</i>
+                        <span>menu</span>
+                    </span>
                 </a>
-                <a href="#" class="item" style="background-image: url('img/menu-2.png');">
-                    <p>Cockails</p>
-                    <span>menu</span>
+                <a href="#" class="item" data-aos="fade-down" data-aos-delay="800">
+                    <span class="item__wrapper" style="background-image: url('img/menu-2.png');">
+                        <i>Dining</i>
+                        <span>menu</span>
+                    </span>
                 </a>
-                <a href="#" class="item" style="background-image: url('img/menu-3.png');">
-                    <p>Drinks</p>
-                    <span>menu</span>
+                <a href="#" class="item" data-aos="fade-up" data-aos-delay="1000">
+                    <span class="item__wrapper" style="background-image: url('img/menu-3.png');">
+                        <i>Dining</i>
+                        <span>menu</span>
+                    </span>
                 </a>
-                <a href="#" class="item" style="background-image: url('img/menu-4.png');">
-                    <p>Dessert</p>
-                    <span>menu</span>
+                <a href="#" class="item" data-aos="fade-down" data-aos-delay="1200">
+                    <span class="item__wrapper" style="background-image: url('img/menu-4.png');">
+                        <i>Dining</i>
+                        <span>menu</span>
+                    </span>
                 </a>
             </div>
         </div>
@@ -161,20 +166,20 @@
     <div class="container">
         <div class="about__wrapper">
             <div class="about__content">
-                <h2>ABOUT <span>US</span></h2>
-                <p>The atmosphere, Style & The View!<br>Discover our brand new skybar located on the 6th floor with amazing panoramatic view over the city.</p>
-                <a href="#"><span>BOOK NOW</span></a>
+                <h2 data-aos="fade-right" data-aos-delay="300">ABOUT <span>US</span></h2>
+                <p data-aos="fade-right" data-aos-delay="500">The atmosphere, Style & The View!<br>Discover our brand new skybar located on the 6th floor with amazing panoramatic view over the city.</p>
+                <a data-aos="fade-right" data-aos-delay="700" href="#"><span>BOOK NOW</span></a>
             </div>
-            <div class="about__img"><picture><source srcset="img/img-about.webp" type="image/webp"><img src="img/img-about.png" alt=""></picture></div>
+            <div class="about__img" data-aos="fade-left" data-aos-delay="900"><picture><source srcset="img/img-about.webp" type="image/webp"><img src="img/img-about.png" alt=""></picture></div>
         </div>
     </div>
 </div>
     <div class="history">
     <div class="container">
         <div class="history__wrapper">
-            <div class="history__box"><picture><source srcset="img/history-1.webp" type="image/webp"><img src="img/history-1.png" alt=""></picture></div>
-            <div class="history__box"><picture><source srcset="img/history-2.webp" type="image/webp"><img src="img/history-2.png" alt=""></picture></div>
-            <div class="history__content">
+            <div class="history__box"  data-aos="fade-up" data-aos-delay="300"><picture><source srcset="img/history-1.webp" type="image/webp"><img src="img/history-1.png" alt=""></picture></div>
+            <div class="history__box" data-aos="fade-down" data-aos-delay="500"><picture><source srcset="img/history-2.webp" type="image/webp"><img src="img/history-2.png" alt=""></picture></div>
+            <div class="history__content" data-aos="fade-left" data-aos-delay="700">
                 <span>SKY BAR</span>
                 <h2>Casablanca</h2>
                 <p>Embark on a journey at our recently inaugurated skybar, perched on the 6th floor, where an enticing trifecta of atmosphere, style, and breathtaking views awaits. Immerse yourself in the warm embrace of our carefully curated ambiance, accentuated by contemporary design elements that elevate the overall experience.</p>
@@ -197,10 +202,10 @@
     <div class="container">
         <div class="video__wrapper">
             <div class="video__content">
-                <h2>PRIVAT <span>EVENT</span></h2>
-                <a href="#"><span>LEARN MORE</span></a>
+                <h2 data-aos="fade-right" data-aos-delay="300">PRIVAT <span>EVENT</span></h2>
+                <a href="#" data-aos="fade-right" data-aos-delay="500"><span>LEARN MORE</span></a>
             </div>
-            <a href="#" class="video__tour">
+            <a data-aos="flip-left" data-aos-delay="700" data-type="iframe" href="https://www.google.com/maps/embed?pb=!4v1703416133520!6m8!1m7!1sCAoSLEFGMVFpcE9XS1pJUWNFSTNvdUpVTG5YOTJRa2x6cGQtSVBZVndsRXBtdUlj!2m2!1d50.08591186050403!2d14.41872102331354!3f0!4f0!5f0.7820865974627469" data-fancybox class="video__tour">
                 <img src="img/icons/icons.svg#logo" alt="">
                 <svg><use href="img/icons/icons.svg#play"></use></svg>
                 <span>START 3D TOUR</span>
@@ -211,9 +216,9 @@
     <div class="images">
     <div class="container">
         <div class="images__wrapper">
-            <picture><source srcset="img/images-1.webp" type="image/webp"><img src="img/images-1.jpg" alt=""></picture>
-            <picture><source srcset="img/images-2.webp" type="image/webp"><img src="img/images-2.jpg" alt=""></picture>
-            <picture><source srcset="img/images-3.webp" type="image/webp"><img src="img/images-3.jpg" alt=""></picture>
+            <picture><source srcset="img/images-1.webp" type="image/webp"><img data-aos="zoom-in" data-aos-delay="300" src="img/images-1.jpg" alt=""></picture>
+            <picture><source srcset="img/images-2.webp" type="image/webp"><img data-aos="zoom-in" data-aos-delay="500" src="img/images-2.jpg" alt=""></picture>
+            <picture><source srcset="img/images-3.webp" type="image/webp"><img data-aos="zoom-in" data-aos-delay="700" src="img/images-3.jpg" alt=""></picture>
         </div>
     </div>
 </div>
@@ -288,9 +293,9 @@
     </div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.7.1.min.js?_v=20231223133721" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js?_v=20231223133721"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js?_v=20231223133721" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="js/app.min.js?_v=20231223133721"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js?_v=20231225140911" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js?_v=20231225140911"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js?_v=20231225140911" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/app.min.js?_v=20231225140911"></script>
 </body>
 </html>
