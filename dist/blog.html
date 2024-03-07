@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css?_v=20240307184048" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20240307184048" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css?_v=20240307184048">
+    <title>Blog</title>
+</head>
+
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <a href="/" class="header__logo">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="img/icons/icons.svg#logo">
+                    <img src="img/icons/icons.svg#logo-mobile" alt="">
+                </picture>
+            </a>
+
+            <div class="header__nav">
+                <ul class="header__menu">
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Reservation</a></li>
+                    <li><a href="#">Private Events</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+
+            <div class="header__lang">
+                <div class="lang__current">
+                    <div class="flag cz"></div>
+                    <i class="arrow">
+                        <svg><use href="img/icons/icons.svg#chevron-down"></use></svg>
+                    </i>
+                </div>
+                <ul class="lang__dropdown">
+                    <li><a href="#" class="flag cz"></a></li>
+                    <li><a href="#" class="flag cz"></a></li>
+                </ul>
+            </div>
+            <div class="header__phone">
+                <p>For reservations, call:</p>
+                <a href="#modal-phone" data-fancybox>
+                    <svg><use href="img/icons/icons.svg#phone"></use></svg>
+                    <span>+420 792 999 292</span>
+                </a>
+            </div>
+            <div class="header__collapse">
+                <span></span><span></span><span></span><span></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="intro">
+    <div class="container">
+        <div class="intro__wrapper">
+            <div class="intro__logo">
+                <img src="img/icons/icons.svg#logo" alt="">
+            </div>
+            <div class="intro__img">
+                <img src="img/icons/icons.svg#skybar" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+    <div class="btn-container">
+    <a href="#" class="btn"><span>BOOK NOW</span></a>
+</div>
+    <section class="blog">
+    <div class="container">
+        <div class="blog__wrapper">
+            <div class="blog__title" data-aos="fade-right" data-aos-delay="300">blog</div>
+            <div class="blog__list">
+                <div class="blog-item" data-aos="fade-right" data-aos-delay="500">
+                    <a href="#" class="blog-item_img">
+                        <picture><source srcset="img/images-1.webp" type="image/webp"><img src="img/images-1.jpg" alt=""></picture>
+                    </a>
+                    <div class="blog-item_header">
+                        <a href="#"><h4>Best rooftop bar in Prague</h4></a>
+                        <p>Elevating Nights at the Best Rooftop Bar in Prague</p>
+                    </div>
+                    <div class="blog-item_footer">
+                        <div class="blog-item__author">
+                            <picture><source srcset="img/author.webp" type="image/webp"><img src="img/author.png" alt=""></picture>
+                            <div>
+                                <p>Albert Orion</p>
+                                <span>Jul 16, 2023</span>
+                            </div>
+                        </div>
+                        <div class="blog-item__views">
+                            <svg><use href="img/icons/icons.svg#teenyicons_eye-outline"></use></svg>
+                            <span>136</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-item" data-aos="fade-right" data-aos-delay="600">
+                    <a href="#" class="blog-item_img">
+                        <picture><source srcset="img/images-1.webp" type="image/webp"><img src="img/images-1.jpg" alt=""></picture>
+                    </a>
+                    <div class="blog-item_header">
+                        <a href="#"><h4>Best rooftop bar in Prague</h4></a>
+                        <p>Elevating Nights at the Best Rooftop Bar in Prague</p>
+                    </div>
+                    <div class="blog-item_footer">
+                        <div class="blog-item__author">
+                            <picture><source srcset="img/author.webp" type="image/webp"><img src="img/author.png" alt=""></picture>
+                            <div>
+                                <p>Albert Orion</p>
+                                <span>Jul 16, 2023</span>
+                            </div>
+                        </div>
+                        <div class="blog-item__views">
+                            <svg><use href="img/icons/icons.svg#teenyicons_eye-outline"></use></svg>
+                            <span>136</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-item" data-aos="fade-right" data-aos-delay="700">
+                    <a href="#" class="blog-item_img">
+                        <picture><source srcset="img/images-1.webp" type="image/webp"><img src="img/images-1.jpg" alt=""></picture>
+                    </a>
+                    <div class="blog-item_header">
+                        <a href="#"><h4>Best rooftop bar in Prague</h4></a>
+                        <p>Elevating Nights at the Best Rooftop Bar in Prague</p>
+                    </div>
+                    <div class="blog-item_footer">
+                        <div class="blog-item__author">
+                            <picture><source srcset="img/author.webp" type="image/webp"><img src="img/author.png" alt=""></picture>
+                            <div>
+                                <p>Albert Orion</p>
+                                <span>Jul 16, 2023</span>
+                            </div>
+                        </div>
+                        <div class="blog-item__views">
+                            <svg><use href="img/icons/icons.svg#teenyicons_eye-outline"></use></svg>
+                            <span>136</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-item" data-aos="fade-right" data-aos-delay="500">
+                    <a href="#" class="blog-item_img">
+                        <picture><source srcset="img/images-1.webp" type="image/webp"><img src="img/images-1.jpg" alt=""></picture>
+                    </a>
+                    <div class="blog-item_header">
+                        <a href="#"><h4>Best rooftop bar in Prague</h4></a>
+                        <p>Elevating Nights at the Best Rooftop Bar in Prague</p>
+                    </div>
+                    <div class="blog-item_footer">
+                        <div class="blog-item__author">
+                            <picture><source srcset="img/author.webp" type="image/webp"><img src="img/author.png" alt=""></picture>
+                            <div>
+                                <p>Albert Orion</p>
+                                <span>Jul 16, 2023</span>
+                            </div>
+                        </div>
+                        <div class="blog-item__views">
+                            <svg><use href="img/icons/icons.svg#teenyicons_eye-outline"></use></svg>
+                            <span>136</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-item" data-aos="fade-right" data-aos-delay="600">
+                    <a href="#" class="blog-item_img">
+                        <picture><source srcset="img/images-1.webp" type="image/webp"><img src="img/images-1.jpg" alt=""></picture>
+                    </a>
+                    <div class="blog-item_header">
+                        <a href="#"><h4>Best rooftop bar in Prague</h4></a>
+                        <p>Elevating Nights at the Best Rooftop Bar in Prague</p>
+                    </div>
+                    <div class="blog-item_footer">
+                        <div class="blog-item__author">
+                            <picture><source srcset="img/author.webp" type="image/webp"><img src="img/author.png" alt=""></picture>
+                            <div>
+                                <p>Albert Orion</p>
+                                <span>Jul 16, 2023</span>
+                            </div>
+                        </div>
+                        <div class="blog-item__views">
+                            <svg><use href="img/icons/icons.svg#teenyicons_eye-outline"></use></svg>
+                            <span>136</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-item" data-aos="fade-right" data-aos-delay="700">
+                    <a href="#" class="blog-item_img">
+                        <picture><source srcset="img/images-1.webp" type="image/webp"><img src="img/images-1.jpg" alt=""></picture>
+                    </a>
+                    <div class="blog-item_header">
+                        <a href="#"><h4>Best rooftop bar in Prague</h4></a>
+                        <p>Elevating Nights at the Best Rooftop Bar in Prague</p>
+                    </div>
+                    <div class="blog-item_footer">
+                        <div class="blog-item__author">
+                            <picture><source srcset="img/author.webp" type="image/webp"><img src="img/author.png" alt=""></picture>
+                            <div>
+                                <p>Albert Orion</p>
+                                <span>Jul 16, 2023</span>
+                            </div>
+                        </div>
+                        <div class="blog-item__views">
+                            <svg><use href="img/icons/icons.svg#teenyicons_eye-outline"></use></svg>
+                            <span>136</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <a href="/" class="footer__logo"><img src="img/icons/icons.svg#logo" alt="Casablanka"></a>
+            <div class="footer__text">© 2023 Casablanca Sky Bar</div>
+            <div class="footer__social">
+                <a href="#"><svg><use href="img/icons/icons.svg#fb"></use></svg></a>
+                <a href="#"><svg><use href="img/icons/icons.svg#insta"></use></svg></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="modal-phone" style="display: none">
+    <div class="modal-content">
+        <h2 class="title">Casablanca Sky Bar</h2>
+        <ul class="list">
+            <li class="address">nám. Curieových 1, 110 00 Staré Město<br>
+                President Hotel Prague</li>
+            <li class="working">
+                <p><strong>Opening hours:</strong><br>
+                    Sunday – Thursday: 18:00 – 00:00<br>
+                    Friday – Saturday: 18:00 – 02:00
+                </p>
+            </li>
+            <li class="email">skybar@casablancaprague.cz</li>
+            <li class="phone">+420 792 999 292</li>
+            <li>IČO: CZ19467702</li>
+        </ul>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js?_v=20240307184048" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js?_v=20240307184048"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js?_v=20240307184048" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/app.min.js?_v=20240307184048"></script>
+</body>
+</html>
